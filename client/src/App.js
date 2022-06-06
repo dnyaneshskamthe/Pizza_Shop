@@ -1,5 +1,5 @@
 import "./App.css";
-import { Container } from "react-bootstrap";
+// import { Container } from "react-bootstrap";
 import Topbar from "./components/Topbar"
 import {BrowserRouter,Route,Switch} from "react-router-dom"
 import About from './components/About'
@@ -7,6 +7,7 @@ import ContactUs from "./components/ContactUs";
 import Policy from "./components/Policy";
 import NavBar from './components/NavBar'
 import Homescreen from "./screens/Homescreen";
+import CartScreen from "./screens/CartScreen";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/contact" component={ContactUs} exact></Route>
         <Route path="/policy" component={Policy} exact></Route>
         <Route path="/" component={Homescreen} exact></Route>
+        <Route path="/cart" component={CartScreen} exact></Route>
       </Switch>
     </BrowserRouter>
   );
